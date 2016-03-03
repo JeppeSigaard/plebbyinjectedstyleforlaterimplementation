@@ -1,0 +1,80 @@
+/* VARS */
+$scots-blue: #2574A9;
+
+
+/* SLIDESHOW */
+body #bg-slider {
+    
+    .slides .slide {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .home-promo .titlepro .upper,
+    .home-promo .titlepro .middle,
+    .home-promo .titlepro .bottom{
+        font-size: 30px;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+        margin-bottom: 10px;
+        margin-top: 10px;
+        text-transform: uppercase;
+        background: transparent;
+        font-weight: 700;
+        color: white;
+        
+        @media only screen and(max-width:480px){
+            
+            font-size: 24px;
+        
+        }
+        
+        .promo-button{
+            background-color: rgba(black,.5);
+            
+            &:hover{
+                background-color:$scots-blue;
+            }
+        }
+        
+    }
+    
+    @media only screen and(max-width:640px){
+        
+        .slide .push-text-slide{
+            height: 100px;
+            padding-top: 100px;
+        }
+        
+        
+    }
+    
+    
+    @media only screen and(max-width:640px){
+        height: 500px;
+        
+        .slides .slide{
+            height: 500px;
+        }
+        
+    }
+    
+    
+    
+    @media only screen and(max-width:480px){
+        height: 400px;
+        
+        .slides .slide{
+            height: 400px;
+        }
+    
+        .slide .push-text-slide{
+            height: 0;
+            padding-top: 40px;
+        }
+        
+        
+    }
+    
+}
+
